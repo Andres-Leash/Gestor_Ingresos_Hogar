@@ -203,8 +203,10 @@ def saldo_total(ingresos_familia, egresos_familia):
                 print("Meses para consultar:")
                 for mes, nombre in meses_disponibles.items():
                     print(f"{mes}. {nombre}")
+                # Se le pregunta al usuario el mes a consultar
                 opcion = input("Escoja el mes (numero) o salir para volver al menu:").strip().lower()
                 print("-" * 30)
+                # Si es 'salir', va a regresar al menú principal
                 if opcion == 'salir':
                     print("Saliendo de saldos")
                     print("-" * 30)
